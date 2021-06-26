@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=lato:400,700,300');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #054470;
+  overflow: hidden;
+}
+
+body .page {
+  margin: 0 auto;
+  width: 920px;
+}
+
+body .content{
+  width: 33.33%;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  max-width: 300px;
+}
+
+body .circle_inner__layer {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transition: all 0.4s;
+}
+
+body .circle_inner {
+  background-color: #B0D5D6;
+  border: 5px solid #fff;
+  overflow: hidden;
+  margin: auto;
+  width: 210px;
+  z-index: 1;
+  height: 210px;
+  position: relative;
+  transition: all 0.3s;
+  border-radius: 50% 50% 0 50%;
+}
+
+.circle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  width: 200px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+
+body .circle_title {
+  text-align: center;
+}
+
+body .circle_title h2, body .circle_title h3 {
+  font-family: "kaushan Script", cursive;
+  font-size: 1.8rem;
+  opacity: 0;
+  color: #5bd6e4;
+  margin: 0;
+  position: relative;
+  top: -10px;
+  transition: all 0.2s 0.04s;
+}
+
+body .circle_title h3 {
+  font-family: "Lato", sans-serif;
+  color: #B0D5D6;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+
+body .circle_inner:hover {
+  transform: scale(1.1);
+}
+
+body .circle_inner:hover .circle_inner__layer:nth-of-type(1) {
+  left: -80px;
+  transition: all 4s linear;
+}
+
+body .circle_inner:hover .circle_inner__layer:nth-of-type(2) {
+  left: -400px;
+  transition: all 4s linear;
+}
+
+body .circle_inner:hover .circle_inner__layer:nth-of-type(3) {
+  left: -140px;
+  transition: all 4s linear;
+}
+
+body .circle .circle_inner__layer:nth-of-type(1) {
+  top: 0px;
+  left: 0px;
+}
+
+body .circle .circle_inner__layer:nth-of-type(2) {
+  top: 0px;
+  left: -210px;
+}
+
+body .circle .circle_inner__layer:nth-of-type(3) {
+  top: 0px;
+  left: -440px;
+}
+
+body .circle:hover h2, body .circle:hover h3 {
+  opacity: 1;
+  top: -36px;
+}
+
+body .circle:hover h3 {
+  transition: all 0.2s 0.04s;
+}
+
+body .circle:hover h2 {
+  transition: all 0.2s;
+}
